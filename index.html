@@ -1,0 +1,47 @@
+<!doctype html>
+    <html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Tytuł</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+        <header id="top">
+            <nav>
+                <hgroup>
+                    <h1><a href=#bottom class="click">CLICK HERE TO GO DOWN!</a></h1>
+                </hgroup>
+                <img src="img/2pac.png">
+            </nav>
+        </header>
+        <main id="bottom">
+                <nav>
+                    <hgroup>
+                     <h1><a href=#top class="click">CLICK HERE TO GO UP!</a></h1>
+                    </hgroup>
+                 </nav>
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+        </script>
+        <script>
+                
+            $(document).ready(function() { 
+            
+                $('a[href^="#"]').on('click', function(event) {
+                
+                    var target = $( $(this).attr('href') );
+                
+                    if( target.length ) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            
+            });
+        </script>
+    </body>
+    </html>

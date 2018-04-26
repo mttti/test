@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+header{
+    background-color: #006fb9;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+main{
+    background-color: #024b7c;
+    height: 100vh;
+    position: relative;
+}
+
+.click{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+
+}
+
+header hgroup{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+main hgroup{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+header img{
+    position: absolute;
+    right: -5%;
+    bottom: 
+}
